@@ -1,0 +1,871 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(238, 238, 238) ;
+}
+
+.youandwe{
+    width: 85%;
+    display: flex;
+}
+
+.youandwe h1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px;
+    color: rgb(11, 17, 66);
+    cursor: pointer;
+}
+
+.youandwe img{
+    width: 45px;
+    margin-left: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#contenedorprinc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 89vh;
+    width: 80%;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#contenedorprinc .inicio .imagenprincipal{
+    display: flex;
+    width: 90vh;
+    height: 65vh;
+}
+
+.imagenprincipal img{
+    width: 90vh;
+    border-radius: 10px;
+    
+}
+
+.seccioningreso{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vh;
+    padding: 20px;
+}
+
+.seccioningreso .mensaje{
+    margin-bottom: 20px;
+}
+
+.seccioningreso .mensaje h1{
+    font-size: 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.resaltado{
+    color: rgb(34, 56, 255);
+}
+
+.seccioningreso .linea{
+    margin-bottom: 30px;
+    width: 420px;
+}
+
+.ingresar{
+    height: 220px;
+    display: flex;
+    align-items: left;
+    /* flex-direction: column; */
+    width: 350px;
+}
+
+.ingresar .botoniniciar{
+    border: 0;
+    background-color: rgb(34, 56, 255);
+    width: 160px;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ingresar .botoniniciar:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 56, 255);
+    border: 1px solid rgb(34, 56, 255);
+}
+
+.ingresar .botonregistrar{
+    border: 0;
+    background-color: rgb(8, 12, 49);
+    width: 160px;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ingresar .botonregistrar:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 12, 49);
+    border: 1px solid rgb(8, 12, 49);
+}
+
+footer{
+    background-color: rgb(2, 4, 20);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(179, 179, 179);
+    font-size: 15px;
+}
+
+/* Login */ 
+
+.login{
+    height: 45vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .errorlogin{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login .textlogin{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(11, 17, 66);
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.login form{
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+}
+
+form .content-login{
+    width: 90%;
+    height: 100%;
+}
+
+.content-login input[type=email]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.content-login input[type=password]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+
+    
+}
+
+.content-login button{
+    border: 0;
+    background-color: rgb(8, 12, 49);
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.content-login button:hover{
+    background-color: rgb(10, 16, 71);
+}
+
+.content-login .botonentrar{
+    display: flex;
+    justify-content: center;
+}
+
+/* Register */
+
+.register{
+    height: 68vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register .erroresregistro{
+    color: red;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 8px;
+}
+
+.register .textlogin{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(11, 17, 66);
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.register form{
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+}
+
+.register .content-register{
+    width: 90%;
+    height: 100%;
+}
+
+.content-register input[type=email], .content-register input[type=text] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.content-register input[type=password]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    
+}
+
+.content-register button{
+    border: 0;
+    background-color: rgb(8, 12, 49);
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.content-register button:hover{
+    background-color: rgb(10, 16, 71);
+}
+
+.content-register .botonentrar{
+    display: flex;
+    justify-content: center;
+}
+
+#home{
+    width: 90%;
+    min-height: 90vh;
+    /* margin: auto;
+    padding-left: 7vh; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding-top: 2rem;
+}
+
+.crearpublicaciones{
+    display: flex;
+    margin: auto;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.crearpublicaciones h4{
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .crearpublicacion{
+    background-color: rgb(14, 14, 85);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.head .crearpublicacion h2{
+    font-size: 15px !important;
+}
+
+.publicacion{
+    margin-top: 10px;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(226, 226, 226);
+    margin-bottom: 6vh;
+}
+
+.publicacion .cabecera{
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.cabecera .usuario{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.cabecera .usuario img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+
+}
+
+.publicacion .imagen{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    max-height: 65vh;
+}
+
+.publicacion .imagen img{
+    width: 100%;
+    height: auto;
+
+}
+
+.publicacion .descripcion{
+    background-color: rgb(241, 241, 241);
+    padding: 15px;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.publicacion .descripcion .nombredeusuario p{
+    cursor: pointer;
+}
+
+.publicacion .nombredeusuario{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.publicacion .nombredeusuario .opciones{
+    padding-right: 10px;
+}
+.publicacion .nombredeusuario .opciones button{
+    margin: 8px;
+}
+
+
+
+.publicacion .publicdetails{
+    background-color: rgb(6, 6, 46);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.publicacion .publicdetails:hover{
+    background-color: rgb(9, 9, 71);
+}
+
+.createpublication{
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 10px;
+}
+
+.createpublication form{
+    width: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.createpublication form .input{
+    width: 100%;
+    height: 50px;
+}
+
+
+.createpublication form textarea{
+    border-radius: 10px;
+    width: 100%;
+    max-height: 70px;
+    background-color: rgb(224, 224, 224);
+}
+
+.createpublication form .submit{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    margin-top: 45px !important;
+    padding: 10px;
+
+}
+
+.createpublication form input[type=submit]{
+    background-color: rgb(6, 6, 46);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.createpublication form input[type=submit]:hover{
+    background-color: rgb(9, 9, 73);
+}
+
+
+/*  */
+
+.editpublication{
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 10px;
+}
+
+.editpublication form{
+    width: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.editpublication form .input{
+    width: 100%;
+    height: 50px;
+}
+
+
+.editpublication form textarea{
+    border-radius: 10px;
+    width: 100%;
+    max-height: 70px;
+    background-color: rgb(224, 224, 224);
+}
+
+.editpublication form .submit{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    margin-top: 45px !important;
+    padding: 10px;
+
+}
+
+.editpublication form input[type=submit]{
+    background-color: rgb(6, 6, 46);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.editpublication form input[type=submit]:hover{
+    background-color: rgb(9, 9, 73);
+}
+
+#home .publicacion .comentarios{
+    padding: 15px;
+    background-color: white;
+    width: 100%;
+}
+
+.comentarios .cm{
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding: 5px;
+    background-color: rgb(6, 6, 46);
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.comentarios .cm p{
+    font-weight: bold;
+    color: white;
+}
+
+.contenedorcomentarios{
+    padding: 10px;
+    min-height: 5vh;
+}
+
+.contenedorcomentarios .comentario{
+    display: flex;
+    min-height: 7vh;
+    align-items: center;
+    padding-left: 5px; 
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(196, 196, 196);
+
+}
+
+.cmprinc{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    min-height: 7vh;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.borrarcomentario{
+    padding-right: 5px;
+}
+
+.comentario .usuario{
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.comentario .usuario p{
+    font-weight: bold;
+}
+
+.comentario .contentcomment{
+    max-width: 80%;
+    min-height: 4vh;
+    padding: 5px;
+}
+
+.crearcomentario{
+    /* width: 180px; */
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.crearcomentario button{
+    background-color: rgb(41, 137, 182);
+    padding: 7px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.crearcomentario button:hover{
+    background-color: white;
+    color: rgb(21, 95, 129);
+    border: 1px solid rgb(21, 95, 129);
+}
+
+.notcomments{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenedordatos{
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contenedordatos .avatar{
+    border-radius: 50%;
+    margin-bottom: 8px;
+ 
+}
+
+.contenedordatos .avatar img{
+    border: 1px solid rgb(187, 187, 187);
+    width: 160px;
+    height: 160px;
+}
+
+.contenedordatos .nombres{
+    min-width: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedordatos .nombres h1{
+    font-size: 35px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.contenedordatos .nombres p{
+    font-size: 18px;
+    color: rgb(109, 109, 109);
+    margin-bottom: 12px;
+}
+
+.contenedordatos .nombres button{
+    background-color: rgb(6, 6, 46);
+}
+
+.logodc{
+    display: none;
+}
+
+#home .sinimagenes{
+    display: flex;
+    justify-content: center;
+}
+
+#home .sinimagenes p{
+    font-size: 18px;
+    color: rgb(131, 131, 131);
+}
+
+.head .search{
+    width: 50px;
+    cursor: pointer;
+   
+}
+
+.search button{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.search button:hover{
+    background-color: aliceblue;
+}
+
+/* Hacer interfaz busqueda */
+.contenedorusersbusqueda{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+    padding: 1rem;
+    min-height: 10vh;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.contenedorusersbusqueda li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenedorusersbusqueda li p{
+    font-size: 20px;
+}
+
+.contenedorusersbusqueda li img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.notresultsearch{
+    display: flex;
+    justify-content: center;
+}
+
+.notresultsearch p{
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+}
+
+
+
+
+/* Movil */
+
+@media (max-width:900px) {
+
+    #contenedorprinc{
+        width: 100%;
+    }
+
+    #contenedorprinc .inicio .imagenprincipal{
+        display: none;
+    }
+
+    .logodc{
+        display:contents;
+    }
+
+    .logodc img{
+        border-radius: 10%;
+        width: 150px;
+    }
+
+    .inicio{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccioningreso{
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .seccioningreso .mensaje h1{
+        font-size: 40px;
+    }
+
+    
+    .seccioningreso .linea{
+        width: 100%;
+    }
+
+    .ingresar{
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .publicacion{
+        width: 100%;
+    }
+
+    .publicacion .imagen{
+        min-height: 34vh;
+        max-height: 50vh;
+    }
+
+    .searchinhead{
+        display: contents !important;
+    }
+
+    .searchinhead button{
+        margin-left: 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        padding: 10px;
+        border: 1px solid gray;
+        margin: 10px;
+        font-size: 25px;
+        border-radius: 50%;
+    }
+
+    .searchinhead button:hover{
+        background-color: aliceblue;
+    }
+
+    .head .search{
+        display: none;
+    }
+
+
+}
+
